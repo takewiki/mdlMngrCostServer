@@ -225,6 +225,7 @@ mngrCost_Server <- function(input,output,session,dms_token) {
   var_txt_mngrCost_period <- tsui::var_text('txt_mngrCost_period')
 
   shiny::observeEvent(input$btnmngrCost_query,{
+    print('bug')
 
     FYear = as.integer(var_txt_mngrCost_year())
     FPeriod = as.integer(var_txt_mngrCost_period())
