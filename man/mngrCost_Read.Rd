@@ -5,16 +5,30 @@
 \title{读取模板成本}
 \usage{
 mngrCost_Read(
-  file_name = "data-raw/白标售价及管理成本20220903_upload_reviewed.xlsx",
+  file_name = "data-raw/产品管理成本模板.xlsx",
+  sheet = "data",
+  FYear = 2022,
+  FPeriod = 9,
   dms_token = "9B6F803F-9D37-41A2-BDA0-70A7179AF0F3"
 )
 }
 \arguments{
 \item{file_name}{文件名}
+
+\item{sheet}{页签名}
+
+\item{FYear}{年份}
+
+\item{FPeriod}{月份}
+
+\item{dms_token}{口令}
 }
 \value{
 返回值
 }
 \description{
 读取模板成本
+}
+\examples{
+mngrCost_Read()
 }
