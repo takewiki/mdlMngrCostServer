@@ -247,7 +247,7 @@ mfgCost_Server <- function(input,output,session,dms_token) {
     sheet_name = var_txt_mfgCost_sheet()
     FYear = as.integer(var_txt_mfgCost_year())
     FPeriod = as.integer(var_txt_mfgCost_period())
-    mdlmfgCostServer::mfgCost_Read(file_name = file_name,sheet = sheet_name,FYear = FYear ,FPeriod = FPeriod,dms_token = dms_token)
+    mfgCost_Read(file_name = file_name,sheet = sheet_name,FYear = FYear ,FPeriod = FPeriod,dms_token = dms_token)
 
     tsui::pop_notice('产品生产成本上传成功')
 
